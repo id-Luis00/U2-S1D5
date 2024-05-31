@@ -18,6 +18,21 @@ h1 {
 }
 
 
+.d-flex {
+    display: flex;
+}
+
+.fl-grow {
+    flex-grow: 1;
+}
+
+.fl-column {
+    flex-direction: column;
+}
+
+.fl-wrap {
+    flex-wrap: wrap;
+}
 
 /* HEADER */
 
@@ -89,3 +104,98 @@ header {
     margin-right: auto;
     width: 500px;
 }
+
+
+
+/* MAIN */
+
+
+main {
+    width: 100%;
+}
+
+/* SECTION ONE */
+
+
+#first-sec {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    column-gap: 25px;
+    row-gap: 25px;
+    justify-content: space-around;
+}
+
+.feedbacks {
+    padding: 0;
+    width: 250px;
+    align-items: center;
+}
+
+.feedbacks img {
+    width: 75px;
+}
+
+.feedbacks h6{
+    font-size: 10.5px;
+    margin-bottom: 2px;
+}
+
+.feedbacks p:last-child {
+    font-size: 10px;
+}
+
+
+
+/* SECTION TWO */
+
+
+#second-sec {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+}
+
+
+/* FIRST ARTICLE */
+
+#second-sec article:first-child {
+    padding: 0.5em;
+    width: 100%;
+}
+
+#second-sec article div {
+    border: 1px solid black;
+    margin-bottom: .5rem;
+}
+
+
+/* SECOND ARTICLE */
+
+#second-sec article:last-child h2 {
+    font-size: 0.7rem;
+    padding: 1em;
+    padding-left: 3px;
+    font-weight: bolder;
+}
+
+#second-sec article:last-child div:first-child {
+
+    padding: 1em;
+    /* justify-content: flex-start;  è di default */
+    gap: 0.5rem;
+}
+
+#second-sec article:last-child button {
+    font-size: 10px;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 0.5px solid lightgray;
+}
+
+
+
